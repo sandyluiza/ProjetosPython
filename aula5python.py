@@ -51,6 +51,7 @@ print(lista_animal)
 #     print('Existe {} na lista'.format(a))
 # else:
 #     print('Não existe {} na lista'.format(a))
+
 # #para incluir item na lista
 #     lista_animal.append(a) #append para adicionar item na lista
 #     print('{} adicionado'.format(a))

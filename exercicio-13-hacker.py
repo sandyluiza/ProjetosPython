@@ -1,11 +1,13 @@
 def count_substring(string, sub_string):
-    # cont = 0
-    # quant_carac = len(string)
-    # for _ in range(quant_carac):
-    #     if sub_string in string:
-    #         cont = cont + 1
-    a = string.count(sub_string)
-    return a
+    cont = 0
+    i = 0
+    quant_carac = len(string)
+    for i in range(quant_carac):
+        if string[i:].startswith(sub_string):   #startswith () é utilizado para verificar se a string é especificado
+        # sub-string no início, se ele retorna True, caso contrário, False.
+            cont = cont + 1
+    #     a = string.count(sub_string)    #conta se tem substring dentro de uma string
+    return cont
 
 
 if __name__ == '__main__':
